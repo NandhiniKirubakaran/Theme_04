@@ -22,7 +22,17 @@ window.onload = function() {
     var icon2 = document.getElementById('icon-image2');
     var icon3 = document.getElementById('icon-image3');
 
-fetch(`https://live2-3af8b-default-rtdb.asia-southeast1.firebasedatabase.app/websites/coruscating-chebakia-2bd16fnetlifyapp.json`)
+    // Get the deployed URL
+    const deployedURL = window.location.href;
+
+    // Remove dots, extra spaces, and hostname from the URL
+    const cleanedURL = deployedURL.replace(/[.\s]+/g, '').replace(/^https?:\/\//, '').split('/')[0];
+
+    // Display only the website name (domain)
+    // document.getElementById('result').textContent = cleanedURL;
+
+
+fetch(`https://live2-3af8b-default-rtdb.asia-southeast1.firebasedatabase.app/websites/${cleanedURL}.json`)
 .then((value)=>value.json())
 .then((data)=>{
     abouttext.innerHTML=data.about_us;

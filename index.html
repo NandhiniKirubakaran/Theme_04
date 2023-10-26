@@ -79,11 +79,11 @@ document.getElementById('result').textContent = cleanedURL;
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav mx-auto">
                     <a href="index.html" class="nav-item nav-link active">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About Us</a>
-                    <a href="events.html" class="nav-item nav-link">Events</a>
-                    <a href="gallery.html" class="nav-item nav-link">Gallery</a>
-                    <a href="services.html" class="nav-item nav-link">Services</a>
-                    <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                    <a href="index.html" class="nav-item nav-link">About Us</a>
+                    <a href="index.html" class="nav-item nav-link">Events</a>
+                    <a href="index.html" class="nav-item nav-link">Gallery</a>
+                    <a href="index.html" class="nav-item nav-link">Services</a>
+                    <a href="index.html" class="nav-item nav-link">Contact Us</a>
                 </div>
                 <a href="" class="btn btn-primary rounded-pill px-3 d-none d-lg-block">Join Us<i class="fa fa-arrow-right ms-3"></i></a>
             </div>
@@ -162,59 +162,66 @@ document.getElementById('result').textContent = cleanedURL;
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="classes-item">
                             <div class="bg-light rounded-circle w-75 mx-auto p-3">
-                                <img class="img-fluid rounded-circle" style="height: 350px; width: 300px; object-fit: cover;" src="img/classes-1.jpg" id="gallery1" alt="">
+                                <img class="img-fluid rounded-circle" style="height: 350px; width: 300px; object-fit: cover;" src="" id="gallery1" alt="" onclick="expandImage('gallery1')">
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="classes-item">
                             <div class="bg-light rounded-circle w-75 mx-auto p-3">
-                                <img class="img-fluid rounded-circle" style="height: 350px; width: 300px; object-fit: cover;" src="img/classes-2.jpg" id="gallery2" alt="">
+                                <img class="img-fluid rounded-circle" style="height: 350px; width: 300px; object-fit: cover;" src="" id="gallery2" alt="" onclick="expandImage('gallery2')">
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="classes-item">
                             <div class="bg-light rounded-circle w-75 mx-auto p-3">
-                                <img class="img-fluid rounded-circle" style="height: 350px; width: 300px; object-fit: cover;" src="img/classes-3.jpg" id="gallery3" alt="">
+                                <img class="img-fluid rounded-circle" style="height: 350px; width: 300px; object-fit: cover;" src="" id="gallery3" alt="" onclick="expandImage('gallery3')">
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="classes-item">
                             <div class="bg-light rounded-circle w-75 mx-auto p-3">
-                                <img class="img-fluid rounded-circle" style="height: 350px; width: 300px; object-fit: cover;" src="img/classes-4.jpg" id="gallery4" alt="">
+                                <img class="img-fluid rounded-circle" style="height: 350px; width: 300px; object-fit: cover;" src="" id="gallery4" alt="" onclick="expandImage('gallery4')">
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="classes-item">
                             <div class="bg-light rounded-circle w-75 mx-auto p-3">
-                                <img class="img-fluid rounded-circle" style="height: 350px; width: 300px; object-fit: cover;" src="img/classes-5.jpg" id="gallery5" alt="">
+                                <img class="img-fluid rounded-circle" style="height: 350px; width: 300px; object-fit: cover;" src="" id="gallery5" alt="" onclick="expandImage('gallery5')">
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="classes-item">
                             <div class="bg-light rounded-circle w-75 mx-auto p-3">
-                                <img class="img-fluid rounded-circle" style="height: 350px; width: 300px; object-fit: cover;" src="img/classes-6.jpg" id="gallery6" alt="">
+                                <img class="img-fluid rounded-circle" style="height: 350px; width: 300px; object-fit: cover;" src="" id="gallery6" alt="" onclick="expandImage('gallery6')">
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="classes-item">
                             <div class="bg-light rounded-circle w-75 mx-auto p-3">
-                                <img class="img-fluid rounded-circle" style="height: 350px; width: 300px; object-fit: cover;" src="img/classes-6.jpg" id="gallery7" alt="">
+                                <img class="img-fluid rounded-circle" style="height: 350px; width: 300px; object-fit: cover;" src="" id="gallery7" alt="" onclick="expandImage('gallery7')">
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="classes-item">
                             <div class="bg-light rounded-circle w-75 mx-auto p-3">
-                                <img class="img-fluid rounded-circle" style="height: 350px; width: 300px; object-fit: cover;" src="img/classes-6.jpg" id="gallery8" alt="">
+                                <img class="img-fluid rounded-circle" style="height: 350px; width: 300px; object-fit: cover;" src="" id="gallery8" alt="" onclick="expandImage('gallery8')">
                             </div>
                         </div>
                     </div>
+                    <div id="expanded-image-container" class="expanded-image-container">
+                        <img src="" alt="Expanded Image" id="expanded-image">
+                        <button type="submit" class="close" onclick="closeExpandedImage()" style="right: 0px; padding-bottom: 600px; color: white;border: none; background-color: black;">
+                          <span>&times;</span>
+                          <h6 style="color: white;">Close</h6>
+                        </button>
+                      </div>
                 </div>
             </div>
         </div>
@@ -392,7 +399,7 @@ document.getElementById('result').textContent = cleanedURL;
     <!-- ---------------------------------------------------------- -->
 <script>
     // Boolean value
-    const showVideo = true; // Set this to true or false based on your condition
+    const showVideo = false; // Set this to true or false based on your condition
   
     // Get the video container element
     const videoContainer = document.getElementById('video-container');

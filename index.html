@@ -32,6 +32,7 @@
 
     <script src="script.js"></script>
     <link href="https://vjs.zencdn.net/7.2.3/video-js.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/6.5.95/css/materialdesignicons.min.css">
 </head>
 
 <body>
@@ -42,17 +43,6 @@
     <div class="loader"></div>
 </div>
 
-
-<!-- <script>
-// Get the deployed URL
-const deployedURL = window.location.href;
-
-// Remove dots, extra spaces, and hostname from the URL
-const cleanedURL = deployedURL.replace(/[.\s]+/g, '').replace(/^https?:\/\//, '').split('/')[0];
-
-// Display only the website name (domain)
-document.getElementById('result').textContent = cleanedURL;
-</script> -->
 
 <div class="content">
 
@@ -71,7 +61,7 @@ document.getElementById('result').textContent = cleanedURL;
             <a href="index.html" class="navbar-brand">
                 <img src="" id="title" 
               alt=""
-              style="height: 80px; width: 100px; padding-left: 10px; object-fit: cover;">
+              style=" width: 100px; padding-left: 10px; object-fit: cover;">
             </a>
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -238,12 +228,12 @@ document.getElementById('result').textContent = cleanedURL;
                         <div class="facility-item">
                             <div class="facility-icon bg-primary">
                                 <span class="bg-primary"></span>
-                                <img src="" id="icon-image" style="height: 60px; width: 80px; border-radius: 50px; object-fit: cover;" alt="">
+                                <i class="" id="icon"></i>
                                 <span class="bg-primary"></span>
                             </div>
                             <div class="facility-text bg-primary">
-                                <h3 class="text-primary mb-3">Weddings</h3>
-                                <p class="mb-0">Obviously, as for a wedding photographer, this type of events is my major specialization..</p>
+                                <h3 class="text-primary mb-3" id="heading">Weddings</h3>
+                                <p class="mb-0" id="content">Obviously, as for a wedding photographer, this type of events is my major specialization..</p>
                             </div>
                         </div>
                     </div>
@@ -251,12 +241,12 @@ document.getElementById('result').textContent = cleanedURL;
                         <div class="facility-item">
                             <div class="facility-icon bg-success">
                                 <span class="bg-success"></span>
-                                <img src="" id="icon-image1" style="height: 60px; width: 80px; border-radius: 50px; object-fit: cover;" alt="">
+                                <i class="" id="icon1"></i>
                                 <span class="bg-success"></span>
                             </div>
                             <div class="facility-text bg-success">
-                                <h3 class="text-success mb-3">Beauty Portraits</h3>
-                                <p class="mb-0">There’s nothing nicer than having a lot of beautiful, elegant and tasteful portaits of yourself, instantly printed!</p>
+                                <h3 class="text-success mb-3" id="heading1">Beauty Portraits</h3>
+                                <p class="mb-0" id="content1">There’s nothing nicer than having a lot of beautiful, elegant and tasteful portaits of yourself, instantly printed!</p>
                             </div>
                         </div>
                     </div>
@@ -264,12 +254,12 @@ document.getElementById('result').textContent = cleanedURL;
                         <div class="facility-item">
                             <div class="facility-icon bg-warning">
                                 <span class="bg-warning"></span>
-                                <img src="" id="icon-image2" style="height: 60px; width: 80px; border-radius: 50px; object-fit: cover;" alt="">
+                                <i class="" id="icon2"></i>
                                 <span class="bg-warning"></span>
                             </div>
                             <div class="facility-text bg-warning">
-                                <h3 class="text-warning mb-3">Engagements</h3>
-                                <p class="mb-0">There’s nothing nicer than having a lot of beautiful, elegant and tasteful portaits of yourself, instantly printed!</p>
+                                <h3 class="text-warning mb-3" id="heading2">Engagements</h3>
+                                <p class="mb-0" id="content2">There’s nothing nicer than having a lot of beautiful, elegant and tasteful portaits of yourself, instantly printed!</p>
                             </div>
                         </div>
                     </div>
@@ -277,12 +267,12 @@ document.getElementById('result').textContent = cleanedURL;
                         <div class="facility-item">
                             <div class="facility-icon bg-info">
                                 <span class="bg-info"></span>
-                                <img src="" id="icon-image3" style="height: 60px; width: 80px; border-radius: 50px; object-fit: cover;" alt="">
+                                <i class="" id="icon3"></i>
                                 <span class="bg-info"></span>
                             </div>
                             <div class="facility-text bg-info">
-                                <h3 class="text-info mb-3">Weddings</h3>
-                                <p class="mb-0">Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero ipsum sit</p>
+                                <h3 class="text-info mb-3" id="heading3">Weddings</h3>
+                                <p class="mb-0" id="content3">Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero ipsum sit</p>
                             </div>
                         </div>
                     </div>
